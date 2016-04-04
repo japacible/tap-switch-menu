@@ -1,0 +1,20 @@
+{
+  "name": "tap-switch-view",
+  "version": "0.0.0",
+  "authors": [
+    "japacible <japacible@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~1.4.0",
+    "paper-menu": "PolymerElements/paper-menu#~1.2.2",
+    "paper-item": "PolymerElements/paper-item#~1.1.4"
+  }
+}

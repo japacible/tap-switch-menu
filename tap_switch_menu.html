@@ -1,0 +1,26 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/paper-item/paper-item.html">
+<link rel="import" href="bower_components/paper-menu/paper-menu.html">
+<dom-module id="tap-switch-menu">
+  <template>
+    <template is="dom-if" if="[[showFirstMenu_]]">
+      <paper-menu>
+        <template is="dom-repeat" items="[[itemListOne_]]">
+          <paper-item on-tap="onTap_">
+            <span>[[item.name]]</span>
+          </paper-item>
+        </template>
+      </paper-menu>
+    </template>
+    <template is="dom-if" if="[[!showFirstMenu_]]">
+      <paper-menu>
+        <template is="dom-repeat" items="[[itemListTwo_]]">
+          <paper-item on-tap="onTap_">
+            <span>[[item.name]]</span>
+          </paper-item>
+        </template>
+      </paper-menu>
+    </template>
+  </template>
+<script src="tap_switch_menu.js"></script>
+</dom-module>
